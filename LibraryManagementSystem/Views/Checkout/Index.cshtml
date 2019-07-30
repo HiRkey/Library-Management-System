@@ -1,0 +1,51 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Checkout>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckBook.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckLibrary.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Since)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Until)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckBook.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckLibrary.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Since)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Until)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CheckoutId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CheckoutId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CheckoutId })
+        </td>
+    </tr>
+}
+
+</table>
