@@ -1,5 +1,7 @@
-﻿using System;
+﻿using LibraryManagementSystem.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,10 +14,9 @@ namespace LibraryManagementSystem
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new LibraryDBInitializer());
+
             AreaRegistration.RegisterAllAreas();
-            UnityConfig.RegisterComponents();
-
-
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
