@@ -10,6 +10,8 @@ using LibraryManagementSystem.Models;
 
 namespace LibraryManagementSystem.Controllers
 {
+    [Authorize(Roles = "Admin")]
+    [RequireHttps]
     public class CheckoutController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
