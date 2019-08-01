@@ -215,6 +215,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Aiw.png" />
+    <Content Include="Content\Images\Dracula.png" />
+    <Content Include="Content\Images\Frankenstein.png" />
+    <Content Include="Content\Images\Pap.png" />
+    <Content Include="Content\Images\Sherlock.png" />
+    <Content Include="Content\Images\Tom.png" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -262,6 +268,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\BookDwld\AliceinWonderland.pdf" />
+    <Content Include="Content\BookDwld\Dracula.pdf" />
+    <Content Include="Content\BookDwld\Frankenstein.pdf" />
+    <Content Include="Content\BookDwld\PrideandPrejudice.pdf" />
+    <Content Include="Content\BookDwld\SherlockHolmes.pdf" />
+    <Content Include="Content\BookDwld\TomSawyer.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -334,7 +346,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
+    <Folder Include="Content\themes\base\images\bookcover\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

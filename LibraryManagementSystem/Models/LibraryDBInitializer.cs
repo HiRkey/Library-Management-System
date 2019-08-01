@@ -17,7 +17,7 @@ namespace LibraryManagementSystem.Models
                 Title = "Alice's Adventure In Wonderland",
                 Year = 1865,
                 Author = "Charles Lutwidge Dodgson",
-                ImageUrl = "Content/Images/Aiw.png"
+                ImageUrl = "~/Content/Images/Aiw.png"
             };
                                           
             Book Dracula = new Book
@@ -26,7 +26,7 @@ namespace LibraryManagementSystem.Models
                 Title = "Dracula",
                 Year = 1992,
                 Author = "Bram Stoker",
-                ImageUrl = "Content/Images/Dracula.png"
+                ImageUrl = "~/Content/Images/Dracula.png"
             };
 
             Book Frankenstein = new Book
@@ -35,7 +35,7 @@ namespace LibraryManagementSystem.Models
                 Title = "Frankenstein",
                 Year = 1818,
                 Author = "Mary Wollstonecraft",
-                ImageUrl = "Content/Images/Frankenstein.png"
+                ImageUrl = "~/Content/Images/Frankenstein.png"
             };
 
             Book PrideAndPrejudice = new Book
@@ -44,7 +44,7 @@ namespace LibraryManagementSystem.Models
                 Title = "Pride and Prejudice",
                 Year = 1813,
                 Author = "Jane Austen",
-                ImageUrl = "Content/Images/Pap.png"
+                ImageUrl = "~/Content/Images/Pap.png"
             };
 
 
@@ -54,7 +54,7 @@ namespace LibraryManagementSystem.Models
                 Title = "The Adventures of Sherlock Holmes",
                 Year = 1892,
                 Author = "Arthur Conan Doyle",
-                ImageUrl = "Content/Images/Sherlock.png"
+                ImageUrl = "~/Content/Images/Sherlock.png"
             };
 
             Book TomSawyer = new Book
@@ -63,7 +63,7 @@ namespace LibraryManagementSystem.Models
                 Title = "The Adventures of Tom Sawyer",
                 Year = 1876,
                 Author = "Mark Twain",
-                ImageUrl = "Content/Images/Tom.png"
+                ImageUrl = "~/Content/Images/Tom.png"
             };
 
             LibraryCard GCBC200300001 = new LibraryCard
@@ -107,8 +107,7 @@ namespace LibraryManagementSystem.Models
                 Name = "Georgian College, Barrie",
                 Address = "1 Georgian Dr, Barrie, ON L4M 3X9",
                 Phone = "(705) 728-1968",
-                Hours = "8-4:30",
-                ImageUrl = "Content/Images/Barrie"
+                Hours = "8-4:30"
             };
 
             LibraryBranch OrilliaBranch = new LibraryBranch
@@ -116,8 +115,7 @@ namespace LibraryManagementSystem.Models
                 Name = "Georgian College, Orillia",
                 Address = "825 Memorial Ave, Orillia, ON L3V 6S2",
                 Phone = "(705) 325-2740",
-                Hours = "7:30-8",
-                ImageUrl = "Content/Images/Orillia"
+                Hours = "7:30-8"
             };
 
             LibraryBranch MidlandBranch = new LibraryBranch
@@ -125,8 +123,7 @@ namespace LibraryManagementSystem.Models
                 Name = "Midland",
                 Address = "649 Prospect Blvd, Midland, ON L4R 4K6",
                 Phone = "(705) 526-3666",
-                Hours = "8-4",
-                ImageUrl = "Content/Images/Midland"
+                Hours = "8-4"
             };
 
             context.Books.Add(AliceInWonderland);
