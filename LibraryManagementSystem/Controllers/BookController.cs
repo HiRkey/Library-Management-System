@@ -10,12 +10,13 @@ using LibraryManagementSystem.Models;
 
 namespace LibraryManagementSystem.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     [RequireHttps]
     public class BookController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [Authorize(Roles = "Admin")]
         // GET: Book
         public ActionResult Index()
         {
@@ -37,9 +38,11 @@ namespace LibraryManagementSystem.Controllers
             return View(book);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Book/Create
         public ActionResult Create()
         {
+
             return View();
         }
 
@@ -47,6 +50,7 @@ namespace LibraryManagementSystem.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "BookId,Isbn,Title,Year,Author,ImageUrl")] Book book)
         {
@@ -60,6 +64,7 @@ namespace LibraryManagementSystem.Controllers
             return View(book);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Book/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -79,6 +84,7 @@ namespace LibraryManagementSystem.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "BookId,Isbn,Title,Year,Author,ImageUrl")] Book book)
         {
@@ -91,6 +97,7 @@ namespace LibraryManagementSystem.Controllers
             return View(book);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Book/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -108,6 +115,7 @@ namespace LibraryManagementSystem.Controllers
 
         // POST: Book/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
