@@ -10,8 +10,9 @@ using LibraryManagementSystem.Models;
 
 namespace LibraryManagementSystem.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     [RequireHttps]
+    [Authorize(Roles = "Admin")]
     public class LibraryBranchController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
