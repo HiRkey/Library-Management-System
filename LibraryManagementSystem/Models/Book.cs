@@ -11,6 +11,8 @@ namespace LibraryManagementSystem.Models
     public class Book
     {
 
+        
+
         public virtual int BookId { get; set; }
 
         [Required]

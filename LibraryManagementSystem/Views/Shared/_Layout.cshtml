@@ -23,6 +23,9 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Book", "Index", "Book")</li>
+                    <li>@Html.ActionLink("LibraryBranch", "Index", "LibraryBranch")</li>
+                    <li>@Html.ActionLink("LibraryCard", "Index", "LibraryCard")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -44,6 +47,10 @@
     <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
     @Scripts.Render("~/bundles/jqueryval")
     <script src="~/Scripts/Custom/MaxWords.js"></script>
+
+    @Scripts.Render("~/bundles/jquery-ui")
+    <script src="~/Scripts/Custom/BookSearch.js"></script>
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     @RenderSection("scripts", required: false)
 </body>
 </html>

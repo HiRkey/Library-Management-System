@@ -277,6 +277,7 @@
     <Content Include="Content\BookDwld\SherlockHolmes.pdf" />
     <Content Include="Content\BookDwld\TomSawyer.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Custom\BookSearch.js" />
     <Content Include="Scripts\Custom\MaxWords.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -346,6 +347,7 @@
     <Content Include="Views\LibraryCard\Details.cshtml" />
     <Content Include="Views\LibraryCard\Edit.cshtml" />
     <Content Include="Views\LibraryCard\Index.cshtml" />
+    <Content Include="Views\Home\BookSearch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
