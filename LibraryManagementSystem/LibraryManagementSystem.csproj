@@ -268,6 +268,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\about.jpg" />
+    <Content Include="images\about1.jpg" />
+    <Content Include="images\book.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\my.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\BookDwld\AliceinWonderland.pdf" />

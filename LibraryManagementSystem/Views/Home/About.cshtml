@@ -1,7 +1,36 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<style>
+    .jumbotron{
+        background:rgba(0,0,0,0.4);
+    }
+    .box {
+        background:rgba(255,255,255,0.8);
 
-<p>Use this area to provide additional information.</p>
+    }
+    h2 {
+        text-align:center;
+        margin-top: 5px;
+    }
+    p {
+        text-align:center;
+    }
+</style>
+<body background="~/images/about1.jpg" style="background-size:cover">
+    
+    <div class="jumbotron">
+        <h2>Welcome To City Library</h2>
+        <div class="box">
+
+            <p>HOURS OF OPERATIONS</p>
+            <p>Monday : 8AM TO 8PM</p>
+            <p>Tuesday : 8AM TO 8PM</p>
+            <p>Wednesday : 8AM TO 8PM</p>
+            <p>Thrusday : 8AM TO 8PM</p>
+            <p>Friday : 8AM TO 8PM</p>
+            <p>Saturday : 8AM TO 8PM</p>
+            <p>Sunday : 8AM TO 8PM</p>
+        </div>
+    </div>
+</body>

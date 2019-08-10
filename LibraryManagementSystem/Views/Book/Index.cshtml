@@ -4,57 +4,74 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Isbn)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Year)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Author)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Isbn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Year)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Author)
-
-
-        </td>
-        <td>
+<head>
+    <style>
+        .newbox {
+            background: rgba(255,255,255,0.6);
+        }
+        h2,p {
+            text-align:center;
+        }
        
-            @Html.DisplayFor(modelItem => item.ImageUrl)
-            <img src="@Url.Content(item.Photo)" width="80" height="120" />
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BookId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BookId })
-        </td>
-    </tr>
-}
+    </style>
+</head>
+<body background="~/images/book.jpg" style="background-size:cover">
+    <div class="newbox">
+        <h2>Books In Library</h2>
 
-</table>
+        <p>
+           
+            @Html.ActionLink("Create New", "Create")
+                </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Isbn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Year)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageUrl)
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Isbn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Year)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Author)
+
+
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(modelItem => item.ImageUrl)
+                        <img src="@Url.Content(item.Photo)" width="80" height="120" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.BookId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.BookId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.BookId })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        </div>
+</body>
